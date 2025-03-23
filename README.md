@@ -1,7 +1,7 @@
 # Cephalon Navis QR page
 
-A simple page for users to parse out thier account ID into a QR code. Not
-limmited to just navis, as long as it can read a QR code
+A simple page for users to parse out their account ID into a QR code. Not
+limited to just navis, as long as it can read a QR code
 
 ### Usage
 
