@@ -7,7 +7,7 @@ export default function App({ Component }: PageProps) {
         <title>Cephalon Navis QR Generator</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-gray-950">
+      <body class="bg-color-surface">
         <Component />
       </body>
     </html>
