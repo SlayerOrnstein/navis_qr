@@ -6,7 +6,6 @@ export const codeSignal = signal<QrCode | undefined>(undefined);
 
 export const processInput = async (event: Event) => {
   event.preventDefault();
-  console.log(event.target);
   if (event.target) {
     const file = (event.target as HTMLInputElement).files?.item(0);
     const text = (event.target as HTMLInputElement).value;
