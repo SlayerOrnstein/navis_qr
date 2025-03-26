@@ -4,6 +4,10 @@ import { encodeBase64 } from "jsr:@std/encoding/base64";
 
 export const codeSignal = signal<QrCode | undefined>(undefined);
 
+export const isValidId = (id: string) => {
+  return /^[0-9a-fA-F]{24}$/.test(id);
+};
+
 export const processInput = async (event: Event) => {
   event.preventDefault();
   if (event.target) {
@@ -23,9 +27,9 @@ export const processInput = async (event: Event) => {
       accountId = matches[1];
     }
 
-    if (text) accountId = text;
+    if (isValidId(text)) accountId = text;
 
-    if (!accountId) return;
+    if (!accountId || !isValidId(accountId)) return;
 
     codeSignal.value = getAccountIdQr(accountId);
   }
