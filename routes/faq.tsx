@@ -1,8 +1,9 @@
 import { CSS, render } from "@deno/gfm";
 
-export default function FAQ() {
-  const faq = Deno.readTextFileSync("./static/faq.md");
-  const document = render(faq);
+export default async function FAQ() {
+  const faq = import.meta.dirname + "/static/faq.md";
+  const file = await Deno.readTextFile(faq.replace("/routes", ""));
+  const document = render(file);
 
   return (
     <>
