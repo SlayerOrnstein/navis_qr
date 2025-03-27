@@ -1,4 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
+import TopBar from "../components/TopBar.tsx";
+
 export default function App({ Component }: PageProps) {
   return (
     <html>
@@ -7,7 +9,8 @@ export default function App({ Component }: PageProps) {
         <title>Cephalon Navis QR Generator</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-color-surface">
+      <body class="bg-color-surface h-screen">
+        <TopBar></TopBar>
         <Component />
       </body>
     </html>
