@@ -14,20 +14,36 @@ user can request from DE at any point.
 The short answer, no. The long answer is
 [Warframe Third-Party software and you](https://suport.warframe.com/hc/en-us/articles/360030014351-Third-Party-Software-and-You).
 
+### **I play on console, how do I get my account ID?**
+
+1. Login to [Warframe](https://www.warframe.com/)
+2. Press F12 (or how ever you open developer tools for your browser)
+3. Access your cookies
+   - Firefox: Storage -> Cookies
+   - Chrome: Application -> Cookie
+4. Click `https://www.warframe.com/`
+5. On the right hand side look for the value `gid`
+6. Copy and paste the value [here](/)
+7. Now you're ready to scan the QR code with Cephalon Navis and get started
+   tracking your Arsenal
+
 ### **Does this count as a login instance**
 
-Nope not all, since you're not logging in at all.
+Nope not all, since you're not logging in.
 
-### **If this doesn't count as logging in, why do I need to log into warframe.com to get my account ID?**
+### **If this doesn't count as a log in, why do I need to log into warframe.com to get my account ID?**
 
 For console players this is the only way to get your account ID in order to pull
 your data. No worries though, this still does not give Cephalon Navis write
 access to your account
 
-### **What happens if DE removes/restricts access to this GDPR endpoint?**
+_For PC players simply use your `EE.log` in the root of
+`%LOCALAPPDATA%\Warframe`_
 
-The arsenal feature will be temporarily disabled and reworked to be a more
-manual process
+### **What happens if DE removes/restricts access to this profile endpoint?**
+
+The arsenal feature will be temporarily disabled and reworked to be of a manual
+process
 
 ### **Hey, I represent DE and I have some questions. Where can I contact you?**
 

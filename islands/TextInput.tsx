@@ -20,9 +20,15 @@ export default function TextInput() {
   };
 
   return (
-    <div class="flex flex-col">
-      <form class="w-full" onSubmit={handleSubmit}>
-        <div class="relative">
+    <div class="flex flex-col items-end">
+      <form
+        class="flex flex-col items-end w-full space-y-2"
+        onSubmit={handleSubmit}
+      >
+        <label class="text-color-secondary">
+          Recommended for Console players
+        </label>
+        <div class="relative w-full">
           <input
             type="text"
             name="accountId"
@@ -40,7 +46,7 @@ export default function TextInput() {
           />
           <button
             type="submit"
-            class="absolute top-1/2 right-0 transform -translate-y-1/2 -translate-x-[-1/2] rounded-xl outline outline-color-primary-container text-white px-4 py-[4.5px] bg-color-primary-container"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 -translate-x-[-1/2] rounded-xl outline outline-color-primary-container text-white px-4 py-[5px] bg-color-primary-container"
           >
             Submit
           </button>
@@ -49,14 +55,6 @@ export default function TextInput() {
           ? ""
           : <span class="text-color-error">Not a valid account ID</span>}
       </form>
-
-      <i class="pt-4 text-md">
-        Account ID can be found by logging into{" "}
-        <a href="https://www.warframe.com/" class="text-color-primary">
-          https://www.warframe.com/
-        </a>{" "}
-        and looking for the cookie value marked "gid"
-      </i>
     </div>
   );
 }

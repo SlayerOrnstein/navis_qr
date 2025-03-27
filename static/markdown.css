@@ -1,0 +1,23 @@
+a {
+  color: rgb(228 225 233);
+
+  &:hover {
+    color: rgb(195 197 221);
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+ol li::marker {
+  color: rgb(228 225 233);
+}
+
+ul {
+  list-style: inside;
+}
+
+ul li::marker {
+  color: rgb(228 225 233);
+}

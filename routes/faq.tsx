@@ -9,16 +9,19 @@ export default async function FAQ() {
     <>
       <head>
         <style>
-          {`a {color: rgb(228 225 233)} a:hover {color: rgb(195 197 221)} ${CSS}`}
+          {CSS}
         </style>
+        <link rel="stylesheet" href="/markdown.css" />
       </head>
-      <div
-        class="pt-16 px-96 markdown-body"
-        data-color-mode="dark"
-        data-dark-theme="dark"
-        // deno-lint-ignore react-no-danger
-        dangerouslySetInnerHTML={{ __html: document }}
-      />
+      <div class="bg-color-surface min-h-screen">
+        <div
+          class="py-8 px-96 markdown-body "
+          data-color-mode="dark"
+          data-dark-theme="dark"
+          // deno-lint-ignore react-no-danger
+          dangerouslySetInnerHTML={{ __html: document }}
+        />
+      </div>
     </>
   );
 }

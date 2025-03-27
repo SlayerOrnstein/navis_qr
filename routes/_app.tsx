@@ -6,10 +6,10 @@ export default function App({ Component }: PageProps) {
     <html>
       <head>
         <meta charset="utf-8" />
-        <title>Cephalon Navis QR Generator</title>
+        <title>Cephalon Navis</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-color-surface h-screen">
+      <body class="bg-color-surface min-h-screen">
         <TopBar></TopBar>
         <Component />
       </body>
