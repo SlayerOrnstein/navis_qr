@@ -2,7 +2,7 @@ export default function TopBar() {
   const image = 50;
 
   return (
-    <div class="topbar pt-4 px-8 flex flex-row justify-between">
+    <div class="topbar pt-4 px-8 flex flex-row justify-between text-xl text-white">
       <a href="/">
         <div class="flex items-center justify-start">
           <img
@@ -15,6 +15,7 @@ export default function TopBar() {
         </div>
       </a>
       <div class="flex flex-row items-center space-x-4">
+        <a href="/faq">FAQ</a>
         <a href="https://github.com/WFCD/navis" class="flex px-4">
           <img
             width={image - 20}

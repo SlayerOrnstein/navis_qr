@@ -22,6 +22,8 @@
   ],
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "@b-fuze/deno-dom": "jsr:@b-fuze/deno-dom@^0.1.49",
+    "@deno/gfm": "jsr:@deno/gfm@^0.10.0",
     "@libs/qrcode": "jsr:@libs/qrcode@^2.0.1",
     "daisyui": "npm:daisyui@4.12.24",
     "preact": "https://esm.sh/preact@10.22.0",
