@@ -16,22 +16,21 @@ export const processInput = async (event: Event) => {
 
     if (!file || !text) return;
 
-    let accountId: string | undefined;
     if (file) {
-      const regex = /AccountId: (\S+)/g;
+      const regex = /AccountId: ([0-9a-fA-F]{24}$)/m;
 
       const logs = await file.text();
       const matches = regex.exec(logs);
+      console.log(matches);
       if (!matches) return;
 
-      accountId = matches[1];
+      codeSignal.value = getAccountIdQr(matches[1]);
+      return;
     }
 
-    if (isValidId(text)) accountId = text;
-
-    if (!accountId || !isValidId(accountId)) return;
-
-    codeSignal.value = getAccountIdQr(accountId);
+    if (isValidId(text)) {
+      codeSignal.value = getAccountIdQr(text);
+    }
   }
 };
 
