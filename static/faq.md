@@ -12,7 +12,7 @@ user can request from DE at any point.
 ### **Will this get my account banned?**
 
 The short answer, no. The long answer is
-[Warframe Third-Party software and you](https://suport.warframe.com/hc/en-us/articles/360030014351-Third-Party-Software-and-You).
+[Warframe Third-Party software and you](https://support.warframe.com/hc/en-us/articles/360030014351-Third-Party-Software-and-You).
 
 ### **I play on console, how do I get my account ID?**
 
